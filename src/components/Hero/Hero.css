@@ -1,0 +1,123 @@
+.content{
+    position:relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBox{
+    position: relative;
+    margin-top: 5%;
+    /* border: 1px solid red; */
+}
+.content .textBox h2{
+    color: #000000;
+    font-size: 2.5em;
+    line-height: 1.4em;
+    font-weight: 500;
+    margin: 0% 5%;
+    /* border: 1px solid red; */
+}
+.content .textBox h2 span{
+    color: #06d560;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.content .textBox p{
+    color: #000000;
+    margin-left: 5%;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.content .imgBox{
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+.butt{
+    display: inline-block;
+    margin-top: 10%;
+    padding: 8px 20px;
+    background: white;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    /* border: 1px solid red; */
+    width: 20%
+}
+.butt a{
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    
+
+}
+.butt:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+    background-color: black;
+    
+    font-weight: 700;
+}
+.butt a:hover{
+    color:white;
+}
+.content .imgBox img{
+    margin: 0% 5%;
+    position: relative;
+    transform: translateY(-10px);
+	animation: float 3s ease-in-out infinite;
+    /* background-Color: red;  */
+
+}
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		/* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+		transform: translatey(0px);
+	}
+}
+
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+.thumb li img{
+    max-width: 100px;
+    margin-top: 20%;
+    /* background-Color: red;  */
+    /* border: 1px solid red; */
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: olivedrab;
+    clip-path: circle(850px at left 1000px);
+}
